@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Example for resume builder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--foundation CSS-->
+    <link rel="stylesheet" href="css/foundation.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/app.css">
+   <!--Js PDF-->
+  <script src="https://cdn.jsdelivr.net/jspdf/1.2.61/jspdf.min.js"></script>
+</head>
+<body>
+      <div class="expanded row">
+          <div class="medium-12 columns">
+              <h1 class="hero">Resume Generator</h1>
+          </div> 
+      </div>
+      <form id="register" action="register" method="post"> 
+        <div class="row form">
+            <div class="medium-6 column">
+                <label for="fullName"><h4>Name</h4></label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="medium-6 column">
+                <label for="email" ><h4>Email</h4></label>
+                <input type="text" placeholder="Enter your mail id" id="email" name="email">
+            </div>
+            <div class="row text-center">
+                <div class="medium-6 medium-offset-3 column butn">
+                  <button id="submit" type="button" onClick="outputname()" class="large button success hollow">Click here to generate PDF</button>
+                </div>  
+            </div>
+        </div>
+      </form>
+      <hr>
+      <hr>
+    
+<!--Script files-->
+<!--JS and Jquery Plugin Begins-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--Custom Jquery-->
+    <!--<script type="text/javascript" src="js/app.js"></script>-->
+    <script type="text/javascript" src="js/vendor/foundation.mij.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
